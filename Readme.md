@@ -10,7 +10,7 @@ We converted this dataset to a format appropriate for the machine learning libra
 
 Using the model: 
 - Install DeepLabCut in a separate python environment ([How to install DeepLabCut](https://deeplabcut.github.io/DeepLabCut/docs/installation.html) )
-- Download the model (release file)
+- Download the model ([release file](https://github.com/adam-matic/AIWings/releases/tag/v1))
 - Activate the environment you created and run the model in a custom script, as we show in the example script in this repository (mark_landmark.py)
 
 The model will create a .h5 file containing tha landmarks that can be converted to other formats. In the example script, we show how to convert the landmarts to the TPS format, so it could be viewed in the tpsDig2. 
