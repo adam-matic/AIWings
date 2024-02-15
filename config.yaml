@@ -1,0 +1,71 @@
+    # Project definitions (do not edit)
+Task: fly_wings
+scorer: bobdan
+date: Jan2023
+multianimalproject: true
+identity: false
+
+    # Project path (change when moving around)
+project_path: C:/Users/USUARIO/dev/AIWings
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  no_video.mp4:
+    crop: 0, 2560, 0, 1920
+individuals:
+- individual1
+uniquebodyparts: []
+multianimalbodyparts:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+- '13'
+- '14'
+- '15'
+bodyparts: MULTI!
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 100
+
+    # Plotting configuration
+skeleton:
+skeleton_color: red
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: jet
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: dlcrnet_ms5
+default_augmenter: multi-animal-imgaug
+default_track_method:
+snapshotindex: -1
+batch_size: 4
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 2560
+y1: 0
+y2: 1920
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
